@@ -130,7 +130,7 @@ module SOAP
             when :simpleType
               # **************************** TODO ************************************
             when :complexType
-              # **************************** TO VERIFY ************************************
+              # **************************** NEED TO BE VERIFIED ************************************
               r = self[:complexType].responseToHash( xml, types )
             else
               xml.each { |e| 

@@ -32,74 +32,109 @@ module SOAP
       end
       
       def xsd_duration( x )
+        x
       end 
       def xsd_dateTime( x )
+        x
       end
       def xsd_time( x )
+        x
       end 
       def xsd_date( x )
+        x
       end
       def xsd_gYearMonth( x )
+        x
       end
       def xsd_gYear( x )
+        x
       end
       def xsd_gMonthDay( x )
+        x
       end
       def xsd_gDay( x )
+        x
       end
       def xsd_gMonth( x )
+        x
       end
       def xsd_base64Binary( x )
+        x
       end
       def xsd_hexBinary( x )
+        x
       end
       def xsd_anyURI( x )
+        x
       end
       def xsd_QName( x )
+        x
       end
       def xsd_NOTATION( x )
+        x
       end
       def xsd_token( x )
+        x
       end
       def xsd_language( x )
+        x
       end
       def xsd_Name( x )
+        x
       end
       def xsd_NMTOKEN( x )
+        x
       end
       def xsd_NCName( x )
+        x
       end
       def xsd_NMTOKENS( x )
+        x
       end
       def xsd_ID( x )
+        x
       end
       def xsd_IDREF( x )
+        x
       end
       def xsd_ENTITY( x )
+        x
       end
       def xsd_IDREFS( x )
+        x
       end
       def xsd_ENTITIES( x )
+        x
       end
       def xsd_nonPositiveInteger( x )
+        x
       end
       def xsd_nonNegativeInteger( x )
+        x
       end
       def xsd_negativeInteger( x )
+        x
       end
       def xsd_unsignedLong( x )
+        x
       end
       def xsd_positiveInteger( x )
+        x
       end
       def xsd_short( x )
+        x
       end
       def xsd_unsignedInt( x )
+        x
       end
       def xsd_byte( x )
+        x
       end
       def xsd_unsignedShort( x )
+        x
       end
       def xsd_unsignedByte( x )
+        x
       end
     end
   end
