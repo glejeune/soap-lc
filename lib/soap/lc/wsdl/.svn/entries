@@ -1,0 +1,76 @@
+8
+
+dir
+1
+svn+ssh://greg@rubyforge.org/var/svn/soap-lc/trunk/lib/soap/lc/wsdl
+svn+ssh://greg@rubyforge.org/var/svn/soap-lc
+
+
+
+2009-01-23T18:42:17.696080Z
+1
+greg
+
+
+svn:special svn:externals svn:needs-lock
+
+service.rb
+file
+
+
+
+
+2009-01-22T13:06:44.000000Z
+61702a10371a2667f7c2c5c3dcf0f326
+2009-01-23T18:42:17.696080Z
+1
+greg
+
+message.rb
+file
+6
+
+
+
+2009-01-28T14:31:08.000000Z
+915b7309711b5459dfa43f071bbb401e
+2009-01-28T18:39:39.408765Z
+6
+greg
+
+portType.rb
+file
+
+
+
+
+2009-01-21T14:01:31.000000Z
+f8222da11220b34990b44e3663874eeb
+2009-01-23T18:42:17.696080Z
+1
+greg
+
+binding.rb
+file
+5
+
+
+
+2009-01-27T14:55:03.000000Z
+207e2d38548d30df2a96e7e6b533f5ca
+2009-01-27T17:57:42.343375Z
+5
+greg
+
+parser.rb
+file
+
+
+
+
+2009-01-22T11:45:01.000000Z
+be54a09833343fff30e98979aa3168ff
+2009-01-23T18:42:17.696080Z
+1
+greg
+

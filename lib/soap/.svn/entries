@@ -1,0 +1,31 @@
+8
+
+dir
+1
+svn+ssh://greg@rubyforge.org/var/svn/soap-lc/trunk/lib/soap
+svn+ssh://greg@rubyforge.org/var/svn/soap-lc
+
+
+
+2009-01-23T18:42:17.696080Z
+1
+greg
+
+
+svn:special svn:externals svn:needs-lock
+
+lc.rb
+file
+6
+
+
+
+2009-01-28T14:32:45.000000Z
+e6906fbadf88c080fabf1af666a7f2bf
+2009-01-28T18:39:39.408765Z
+6
+greg
+
+lc
+dir
+

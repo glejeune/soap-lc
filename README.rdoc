@@ -1,0 +1,61 @@
+= SOAP Lite Client
+
+Copyright (C) 2007 Gregoire Lejeune
+
+* http://soap-lc.rubyforge.org/
+* http://rubyforge.org/projects/soap-lc/
+* http://greg.rubyfr.net
+  
+== DESCRIPTION: 
+
+SOAP Lite Client provides support for developing clients interfaces from WSDL files.
+
+== FEATURES/PROBLEMS:
+
+=== 0.0.3:
+* Use jeweler
+
+=== 0.0.2:
+* Extract Core extensions
+* Format response
+* Add binding support
+
+=== 0.0.1: 
+* Initial release. So...
+
+=== TODO:
+* Add MTOM support (see http://www.javapassion.com/handsonlabs/wsmtom/, http://mtom4ruby.blogspot.com/ and http://www.w3.org/TR/soap12-mtom/)
+
+== SYNOPSIS:
+
+	require 'soap/lc'
+
+	wsdl = "http://localhost:3000/simple/wsdl"
+	s = SOAP::LC.new( ).wsdl( wsdl ).call( "HelloWorld", { :from => "Greg" } )
+	r = s.result
+	puts r.to_h
+	
+	# Or
+	
+	r = SOAP::LC["http://localhost:3000/wsdl"].HelloWorld( :from => "greg" ).result
+
+== REQUIREMENTS:
+
+* ActiveSupport (but maybe not for a long time !)
+
+== INSTALL:
+
+  sudo gem install soap-lc
+
+or
+
+  sudo gem install soap-lc --source=http://dev.rubyfr.net
+  
+== LICENSE:
+
+SOAP Lite Client is freely distributable according to the terms of the
+GNU General Public License.
+
+This program is distributed without any warranty. See the file
+'COPYING' for details.
+
