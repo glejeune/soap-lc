@@ -44,6 +44,7 @@ Gem::Specification.new do |s|
      "lib/soap/lc/xsd/restriction.rb",
      "lib/soap/lc/xsd/sequence.rb",
      "lib/soap/lc/xsd/simpletype.rb",
+     "soap-lc.gemspec",
      "tests/t_000.rb"
   ]
   s.homepage = %q{http://github.com/glejeune/soap-lc}
