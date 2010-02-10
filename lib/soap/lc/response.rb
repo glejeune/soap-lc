@@ -50,14 +50,18 @@ module SOAP
       # raise SOAP::LCElementError, "Invalide SOAP response!" if xml_result.root.children[0].children[0].name != "#{@request[:method]}Response"
             
       xml_response = xml_result.root.children[0].children[0].children
-      @request[:wsdl].messages[@request[:response]].parts.each do |_, attrs|
+      @request[:wsdl].messages[@request[:response]].parts.each do |node, attrs|
         case attrs[:mode]
           when :element
             @to_h = @request[:wsdl].types[attrs[:element].nns][:value].responseToHash( xml_response, @request[:wsdl].types )
           when :type
             if SOAP::XSD::ANY_SIMPLE_TYPE.include?( attrs[:type].nns )
+              # **************************** NEED TO BE VERIFIED ************************************
+              @to_h = { node.to_sym => SOAP::XSD::Convert.to_ruby( attrs[:type].to_s, xml_response[0].children[0].to_s ) }
               # **************************** TODO ************************************
             else
+              # **************************** TODO ************************************
+              warn( "Complex type #{attrs[:type]} not yet supported! for #{xml_response}" )
               # **************************** TODO ************************************
             end
           else
