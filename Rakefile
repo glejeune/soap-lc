@@ -11,6 +11,8 @@ begin
     gem.homepage = "http://github.com/glejeune/soap-lc"
     gem.authors = ["glejeune"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    
+    gem.add_dependency('activesupport')
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
