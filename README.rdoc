@@ -1,10 +1,8 @@
 = SOAP Lite Client
 
-Copyright (C) 2007 Gregoire Lejeune
+Copyright (C) 2007-2010 Grégoire Lejeune
 
-* http://soap-lc.rubyforge.org/
-* http://rubyforge.org/projects/soap-lc/
-* http://greg.rubyfr.net
+* http://algorithmique.net
   
 == DESCRIPTION: 
 
@@ -28,16 +26,16 @@ SOAP Lite Client provides support for developing clients interfaces from WSDL fi
 
 == SYNOPSIS:
 
-	require 'soap/lc'
+  require 'soap/lc'
 
-	wsdl = "http://localhost:3000/simple/wsdl"
-	s = SOAP::LC.new( ).wsdl( wsdl ).call( "HelloWorld", { :from => "Greg" } )
-	r = s.result
-	puts r.to_h
-	
-	# Or
-	
-	r = SOAP::LC["http://localhost:3000/wsdl"].HelloWorld( :from => "greg" ).result
+  wsdl = "http://localhost:3000/simple/wsdl"
+  s = SOAP::LC.new( ).wsdl( wsdl ).call( "HelloWorld", { :from => "Greg" } )
+  r = s.result
+  puts r.to_h
+  
+  # Or
+  
+  r = SOAP::LC["http://localhost:3000/wsdl"].HelloWorld( :from => "greg" ).result
 
 == REQUIREMENTS:
 
