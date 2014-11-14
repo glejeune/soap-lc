@@ -1,3 +1,0 @@
-This sample need Mono (http://www.mono-project.com).
-
-Once mono is installed, run xsp in this directory...

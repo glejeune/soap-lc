@@ -7,6 +7,8 @@ require 'soap/lc/error'
 
 module SOAP
   class Request
+    attr_reader :request
+
     def initialize( wsdl, binding ) #:nodoc:
       @wsdl = wsdl
       @binding = binding
@@ -71,7 +73,7 @@ module SOAP
     #   response = request.call( "myMethod", :param1 => "hello" )
     #     # => #<SOAP::Response:0xNNNNNN>
     def call( methodName, args )
-      args = (args || {}).keys_to_sym!
+      args = (args || {}) #.keys_to_sym!
 
       # Get Binding
       binding = @wsdl.bindings.getBindingForOperationName( @binding, methodName )
@@ -195,7 +197,7 @@ module SOAP
     private
     def make_header( e, h = {} ) #:nodoc:
       {
-        'User-Agent' => "SOAP::LC (#{SOAP::LC::VERSION}); Ruby (#{VERSION})",
+        'User-Agent' => "SOAP::LC (#{SOAP::LC::VERSION}); Ruby (#{RUBY_VERSION})",
         'Content-Type' => 'text/xml', #'application/soap+xml; charset=utf-8',
         'Content-Length' => "#{e.length}"
       }.merge( h )
